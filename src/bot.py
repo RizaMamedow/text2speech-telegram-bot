@@ -1,7 +1,7 @@
 from gtts import gTTS
 import telebot
 
-from additions import match_lang
+from src.additions import match_lang
 from config import TOKEN
 
 
@@ -11,8 +11,7 @@ bot = telebot.TeleBot(TOKEN)
 def start_message(message):
     bot.send_message(
         message.chat.id, 
-        """TextToSpeech (by krugleshock)
-        Напиши сообщение получишь звук"""
+        """TextToSpeech (by krugleshock) \nНапиши сообщение получишь звук"""
         )
 
 
